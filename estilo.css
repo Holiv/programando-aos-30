@@ -1,0 +1,233 @@
+body, html{
+    margin: 0;
+    height: 100vh;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    min-width: 680px;
+    
+    
+}
+ul, li{
+    list-style: none;
+    text-decoration: none;
+}
+
+/* configurações das viewports*/
+.viewport-1{
+    background-color: #013950;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+        #logo{
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            color: #fef5c8;
+        }
+
+.viewport-2{
+    background: #2c6b74;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    #perfil-img{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .viewport-2 img{
+        width: 175px;
+        height: 175px;
+        border-radius: 50%;
+        opacity: 1.0;
+        margin: 25px 0;
+    }
+    #perfil-text{
+        width: 80%;
+        font-size: 0.9em;
+        display: flex;
+        justify-content: center;
+    }
+        #perfil-text p{
+            text-align: justify;
+            width: 450px;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        #perfil-text a{
+            text-decoration: none;
+            color: #f23e02;
+        }
+            #perfil-text a:hover{
+                border-bottom: 1px dotted #f23e02;
+            }
+
+.viewport-3{
+    background: #00988d;
+}
+    .titulo-comunidade-p30{
+        box-sizing: border-box;
+        padding: 5%;
+
+        border: 1px solid red;
+    }
+    .corpo-comunidade-p30{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1%;
+        
+        border: 1px solid green;
+    }
+        .texto-comunidade-p30{
+            width: 550px;
+            text-align: justify;
+            box-sizing: border-box;
+            padding: 0 12px;
+           
+
+            border: 1px solid blue;
+        }
+        .login-p30{
+            width: 300px;
+            
+
+            border: 1px solid black;
+        }
+
+/* configurações gerais das viewports */
+.viewport-1, .viewport-2, .viewport-3, .viewport-4, .viewport-5{
+    height: 100%;
+    position: relative;
+    opacity: 0.8;
+
+    
+    background-position: center; /*definir posição cetralizada*/
+    background-size: cover; /*em caso de telas maiores o background se expande*/
+    background-attachment: fixed; /*a imagem permanece fixa em relação a rolagem*/
+}
+
+
+
+
+
+.viewport-4{
+    background-color: #013750;
+}
+
+.viewport-5{
+    background-color: #2c6b74;
+}
+
+/* temporário - remover margem do h1*/
+.viewport-2 h1, .viewport-3 h1, .viewport-4 h1, .viewport-5 h1{
+    margin: 0;
+}
+
+.rodape{
+    height: 20%;
+    background: #f23e02;
+    opacity: 0.8;
+}
+    .rodape h1{
+        margin: 0;
+    }
+
+/* formatação geral do bloco de navegação */
+#navegacao-0{
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    top: 85%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    #navegacao-0 ul li{
+        float: left;
+    }
+
+    #navegacao-0 li a{
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0 20px;
+        font-size: 0.8em;
+        color: #fef5c8;
+        opacity: 0.5;
+    }
+        #navegacao-0 li a:hover{
+            color: #f23e02;
+            opacity: 1;
+            border-bottom: 1px solid #f23e02;
+            
+        }
+
+#bloco-0{
+    background-color: #2c6b74;
+    opacity: 0.5;
+    height: 15%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    #navegacao-1 ul li{
+        float: left;
+        margin: 0 0;
+        text-transform: uppercase;
+    }
+        #navegacao-1 li a{
+            text-decoration: none;
+            color: #fef5c8;
+            display: block;
+            padding: 15px;
+            
+        }
+        #navegacao-1 li a:hover{
+            background-color: #013950;
+            color: #f23e02;
+            
+            
+        }
+        .sticky{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+
+/* formatação dos blocos de intercalação */
+.bloco-1, .bloco-2, .bloco-3, .bloco-4{
+    height: 20%;
+    background: rgba(254, 245, 200, 0.5);
+    
+}
+    .bloco-1 p, .bloco-2 p, .bloco-3 p, .bloco-4 p{
+        margin: 0;
+        box-sizing: border-box;
+        padding: 15px;
+
+    }
+
+.bloco-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+}
+
+.bloco-2{
+    
+    background: rgba(242, 62, 2, 0.8);
+}
+    
+
+
